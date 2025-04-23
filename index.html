@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bingo Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎯 Bingo Game</h1>
+
+  <div class="board-container">
+    <h2>Your Board</h2>
+    <div id="player-board" class="board"></div>
+  </div>
+
+  <h3>Your Points: <span id="player-points">0</span></h3>
+  <h2 id="message"></h2>
+
+  <button onclick="revealLeftNumbers()">😵 Defeat</button>
+
+  <audio id="win-sound" src="https://www.soundjay.com/human/sounds/applause-01.mp3"></audio>
+
+  <!-- Put script at the end so all elements are loaded first -->
+  <script src="script.js"></script>
+</body>
+</html>
