@@ -2,25 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bingo Game</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>🎯 Bingo Game</h1>
-
-  <div class="board-container">
-    <h2>Your Board</h2>
-    <div id="player-board" class="board"></div>
+  <div class="container">
+    <h1>🎉 Bingo Game</h1>
+    
+    <div id="bingo-board"></div>
+    
+    <div>
+      <button onclick="restartGame()">🔁 Restart</button>
+      <button onclick="showRemaining()">❌ Defeat</button>
+    </div>
+    
+    <div id="message" style="margin-top: 20px; font-size: 18px; color: green;"></div>
   </div>
 
-  <h3>Your Points: <span id="player-points">0</span></h3>
-  <h2 id="message"></h2>
+  <audio id="winSound" src="win.mp3" preload="auto"></audio>
 
-  <button onclick="revealLeftNumbers()">😵 Defeat</button>
-
-  <audio id="win-sound" src="https://www.soundjay.com/human/sounds/applause-01.mp3"></audio>
-
-  <!-- Put script at the end so all elements are loaded first -->
   <script src="script.js"></script>
 </body>
 </html>
